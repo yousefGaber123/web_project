@@ -11,38 +11,80 @@
         <nav>
             <div class="logo">Accessory Store</div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <h1>Welcome to Our Accessories Store</h1>
             <p>Find the perfect accessories for every occasion.</p>
-            <a href="products.html" class="btn">Shop Now</a>
+            <a href="#products" class="btn">Shop Now</a>
         </section>
-        <section class="featured">
-            <h2>Featured Products</h2>
+        <section id="products" class="featured">
+            <h2>Our Products</h2>
             <div class="products-grid">
                 <div class="product">
-                    <img src="https://source.unsplash.com/300x200/?necklace" alt="Necklace">
+                    <img src="images/necklace.jpg" alt="Necklace">
                     <h3>Elegant Necklace</h3>
                     <p>$25.00</p>
+                    <button class="btn">Add to Cart</button>
                 </div>
                 <div class="product">
-                    <img src="https://source.unsplash.com/300x200/?watch" alt="Watch">
+                    <img src="images/watch.jpg" alt="Watch">
                     <h3>Stylish Watch</h3>
                     <p>$50.00</p>
+                    <button class="btn">Add to Cart</button>
                 </div>
                 <div class="product">
-                    <img src="https://source.unsplash.com/300x200/?earrings" alt="Earrings">
+                    <img src="images/earrings.jpg" alt="Earrings">
                     <h3>Gold Earrings</h3>
                     <p>$15.00</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/bracelet.jpg" alt="Bracelet">
+                    <h3>Silver Bracelet</h3>
+                    <p>$30.00</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/ring.jpg" alt="Ring">
+                    <h3>Diamond Ring</h3>
+                    <p>$100.00</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/hat.jpg" alt="Hat">
+                    <h3>Fashion Hat</h3>
+                    <p>$20.00</p>
+                    <button class="btn">Add to Cart</button>
                 </div>
             </div>
+        </section>
+        <section id="about" class="about">
+            <h1>About Us</h1>
+            <p>Welcome to our Accessories Store! We are passionate about providing high-quality, stylish accessories for every occasion. Our collection includes necklaces, watches, earrings, bracelets, rings, and more, all carefully selected to enhance your personal style.</p>
+            <p>Founded in 2023, our store aims to offer affordable luxury and timeless pieces that make you feel confident and elegant. We believe in sustainability and ethical sourcing, ensuring our products are not only beautiful but also responsibly made.</p>
+            <p>Thank you for choosing us for your accessory needs. We look forward to serving you!</p>
+        </section>
+        <section id="contact" class="contact">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </section>
     </main>
     <footer>
